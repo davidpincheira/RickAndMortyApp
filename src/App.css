@@ -1,0 +1,79 @@
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+header {
+    background-color: #409e24;
+    margin-bottom: 35px;
+    text-align: left;
+}
+
+header h1 {
+    font-size: 49px;
+    font-family: 'Creepster', cursive;
+    display: inline-block;
+    color: #000;
+    background-color: #fff;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin-left: 60px;
+}
+
+header a {
+    text-decoration: none;
+    color: #000;
+}
+
+.app {
+    text-align: center;
+}
+
+.app input {
+    font-size: 18px;
+    padding: 5px 15px;
+    color: #3b3a3a;
+}
+
+.app button {
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    margin-left: 5px;
+    background-color: #22ae40;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.results {
+    text-align: left;
+}
+
+.results ul li {
+    display: inline-block;
+    margin: 20px;
+    vertical-align: top;
+}
+.results ul li > a {
+}
+
+.results ul li .name {
+    display: block;
+    text-align: center;
+    width: 200px;
+}
+
+.results a img {
+    width: 200px;
+}
+
+.quote {
+    font-size: 52px;
+    color: #7d7a7a;
+    max-width: 70%;
+    margin: 30px auto;
+}
+
+.spinner {
+    width: 70px;
+}
