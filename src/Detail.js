@@ -1,7 +1,7 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 
 function Detail(route) {
-    const [data, setData] = useState([]);
+    const [data, setData] = React.useState([]);
 
     const getInfo = async () => {
         const result = await fetch(`https://rickandmortyapi.com/api/character/${route.id}`);
@@ -9,7 +9,7 @@ function Detail(route) {
         setData(data)
     };
 
-    useEffect(() => {
+    React.useEffect(() => {
         getInfo();
     }, []);
 
