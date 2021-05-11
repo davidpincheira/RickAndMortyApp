@@ -37,12 +37,15 @@ function Search() {
                         <img src={item.image} alt={item.name} />
                     </Link>
                     
-                    <span className='name'>
+                    <span className='name'> 
                       {item.name}
                     </span>
                     Status: {item.status} <p />
                     {item.species}<p />
-                    <a href= {item.location.url}>Ir al Detalle del Episodio</a>
+                    
+                    <Link to={`/episode/${item.id}`}>
+                        Ir al Detalle del Episodio
+                    </Link>
                     <p />
                     {
                       item.episode.forEach(element => {

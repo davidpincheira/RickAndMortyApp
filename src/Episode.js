@@ -5,12 +5,10 @@ function Episode(route) {
 
     const getEpisode = async () => {
         const result = await fetch(
-            `https://rickandmortyapi.com/api/episode/`,
+            `https://rickandmortyapi.com/api/episode/${route.id}`,
         );
         const item = await result.json()
-        console.log(route)
-
-        setData(item.results)
+        setData(item)
     };
 
     useEffect(() => {
@@ -19,11 +17,12 @@ function Episode(route) {
 
     return (
         <div>
-            {/* {
-                data.map(item => (
-                    item.name
-                ))
-            } */}
+            {
+                data.map(item=> {
+                    <p>{console.log(item)}</p>
+                })
+                
+            }
         </div>
     )
 }
